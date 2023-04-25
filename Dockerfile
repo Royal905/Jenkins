@@ -48,5 +48,5 @@ COPY headless /var/www/html/headless/
 EXPOSE 80
 USER root
 
-#RUN start script
+#RUN start script000
 ENTRYPOINT ["sh", "/scripts/run.sh" ]
