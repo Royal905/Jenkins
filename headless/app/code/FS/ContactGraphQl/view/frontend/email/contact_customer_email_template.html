@@ -1,0 +1,11 @@
+<!--@subject {{trans "Thanks for your inquiry at  %store_name" store_name=$store.getFrontendName()}} @-->
+{{template config_path="design/email/header_template"}}
+
+<p>{{trans "Dear"}} {{var customer_name}},</p>
+<p>
+	Thanks for your inquiry at at {{var store.getFrontendName()}} . We will get in touch with you shortly.
+</p>
+
+
+{{var store.getFrontendName()}}
+{{template config_path="design/email/footer_template"}}

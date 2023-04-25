@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+   <system>
+	    <tab id="fsconfig" translate="label" sortOrder="110" >
+            <label>Site Configurations</label>
+        </tab>
+       <section id="fsconfig" translate="label" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+           <class>separator-top</class>
+           <label>Configurations</label>
+           <tab>fsconfig</tab>
+           <resource>FS_SiteConfig::config</resource>
+           <group id="settings" translate="label" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+               <label>Home Configurations</label>
+                <field id="show_banner" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Banner</label>
+                    <comment>Enable or disable</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="show_product_category" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Product Categories</label>
+                    <comment>Enable or disable</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                 <field id="show_about_us" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show About US</label>
+                    <comment>Enable or disable</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="show_new_arrivals" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show New Arrivals</label>
+                    <comment>Enable or disable</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="show_best_seller" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Best Seller</label>
+                    <comment>Enable or disable</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="show_blogs" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Blogs</label>
+                    <comment>Enable or disable</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="show_testimonals" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Testimonals</label>
+                    <comment>Enable or disable</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                 <field id="home_categories" translate="label" type="multiselect" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Allowed Categories on homepage</label>
+                    <source_model>FS\SiteConfig\Model\Config\Source\CategoryList</source_model>
+                </field>
+                <field id="support_email" type="text" translate="label"  sortOrder="60" showInDefault="1" showInStore="1">
+                   <label>Support email </label>
+                </field>
+               <field id="support_phone" type="text" translate="label"  sortOrder="70" showInDefault="1" showInStore="1">
+                   <label>Support phone</label>
+               </field>
+           </group>
+       </section>
+   </system>
+</config>

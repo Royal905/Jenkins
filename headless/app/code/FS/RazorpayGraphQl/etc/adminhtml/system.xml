@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <section id="payment">
+            <group id="pinepgpaymentmethod">
+          
+			<field id="merchant_payment_url" translate="label" type="text" sortOrder="120" showInDefault="1" showInWebsite="1" showInStore="0">
+			<label>Merchant payment status url</label>
+                </field>
+		<field id="sandbox_url_inquiry" translate="label" type="text" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="0">
+			<label>Sandbox inquiry url</label>
+                </field>
+
+		<field id="production_url_inquiry" translate="label" type="text" sortOrder="140" showInDefault="1" showInWebsite="1" showInStore="0">
+			<label>Production inquiry url</label>
+                </field>
+
+            </group>
+        </section>
+    </system>
+</config>
