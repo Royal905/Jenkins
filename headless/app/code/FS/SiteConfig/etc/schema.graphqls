@@ -1,0 +1,14 @@
+type StoreConfig {
+    show_banner : Int @doc(description: "Extended Config Data - fsconfig/settings/show_banner")
+    show_product_category : Int @doc(description: "Extended Config Data - fsconfig/settings/show_product_category")
+    show_about_us : Int @doc(description: "Extended Config Data - fsconfig/settings/show_about_us")
+    show_new_arrivals : Int @doc(description: "Extended Config Data - fsconfig/settings/show_new_arrivals")
+    show_best_seller : Int @doc(description: "Extended Config Data - fsconfig/settings/show_best_seller")
+    show_blogs : Int @doc(description: "Extended Config Data - fsconfig/settings/show_blogs")
+    show_testimonals : Int @doc(description: "Extended Config Data - fsconfig/settings/show_testimonals")
+    home_categories : String  @doc(description: "Extended Config Data - fsconfig/settings/home_categories")
+    support_email : String  @doc(description: "Extended Config Data - fsconfig/settings/support_email")
+    support_phone : String  @doc(description: "Extended Config Data - fsconfig/settings/support_phone")
+
+    
+}

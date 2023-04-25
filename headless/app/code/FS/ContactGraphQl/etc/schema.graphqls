@@ -1,0 +1,17 @@
+type Mutation {
+    contactusFormSubmit(input: ContactusInput!): ContactusOutput @resolver(class: "\\FS\\ContactGraphQl\\Model\\Resolver\\Contactus") @doc(description:"Contact us form")
+}
+
+input ContactusInput {
+    fullname: String @doc(description: "The customer's full name")
+    email: String @doc(description: "The customer's email address")
+    phone: String @doc(description: "The Phone Number")
+	numberofemp: String @doc(description: "The Number of Employee")
+	solution: String @doc(description:"The Solutions")
+    message: String @doc(description: "The customer's message")
+	status: Int @doc(description: "The customer's status")
+}
+
+type ContactusOutput {
+   success_message: String @doc(description: "Success Message")
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+ <table name="pin_code" resource="default" engine="innodb" comment="Contact request">
+      <column xsi:type="varchar" name="state_code" nullable="false" length="255" comment="State Code" />
+      <column xsi:type="varchar" name="state_id" nullable="false" length="255" comment="State Id" />
+   </table>
+</schema>

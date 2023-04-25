@@ -1,0 +1,20 @@
+{
+    "name": "fs/module-faq-graph-ql",
+    "version": "1.0.0",
+    "description": "faq graph GL based on prince faq ",
+    "type": "magento2-module",
+    "require": {
+      "prince/module-faq": "2.0.*"
+    },
+    "license": [
+      "MIT"
+    ],
+    "autoload": {
+      "files": [
+        "registration.php"
+      ],
+      "psr-4": {
+        "FS\\FaqGraphQl\\": ""
+      }
+    }
+  }

@@ -1,0 +1,13 @@
+type Query {
+    brandsdata : [brands] @resolver( class: "FS\\BrandGraphQl\\Model\\Resolver\\BrandRecords") @doc(description: "Get All  Records")
+}
+
+type brands {
+brand_id : Int  @doc(description: "brand Id"),
+name : String  @doc(description: "name"),
+image : String  @doc(description: "image"),
+thumbnail : String  @doc(description: "thumbnail"),
+status : String  @doc(description: "status"),
+position : String  @doc(description: "position")
+
+}

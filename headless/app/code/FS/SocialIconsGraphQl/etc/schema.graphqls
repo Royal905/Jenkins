@@ -1,0 +1,13 @@
+type Query {
+    socialiconsdata : [socialicons] @resolver( class: "FS\\SocialIconsGraphQl\\Model\\Resolver\\SocialIconsRecords") @doc(description: "Get All  Records")
+}
+
+type socialicons {
+	socialicons_id : Int  @doc(description: "brand Id"),
+	title : String  @doc(description: "name"),
+	icon_label : String  @doc(description: "icon_label"),
+	image : String  @doc(description: "image"),
+	social_url : String  @doc(description: "thumbnail")
+	position : String  @doc(description: "position")
+	status : Int  @doc(description: "status")
+}

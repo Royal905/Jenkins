@@ -1,0 +1,55 @@
+type Query
+{
+    Faqs (
+        currentPage:Int,
+        pageSize:Int,
+        filter:FaqFilterInput,
+        sort:FaqSortInput
+      ):
+    [FaqItems] @resolver(class: "FS\\FaqGraphQl\\Model\\FaqResolver")
+    @doc(description:"Store list by lat long")
+    FaqGroups(
+        currentPage:Int,
+        pageSize:Int):[FaqGroupItems] @resolver(class: "FS\\FaqGraphQl\\Model\\FaqGroupResolver")
+ }
+
+type FaqGroupItems {
+    faqgroup_id: Int
+    groupname: String
+    icon: String
+    storeview:String
+    customer_group: String
+    sortorder: Int
+    created_at: String
+    updated_at:String
+}
+type FaqItems {
+    title:String
+    faq_id:Int
+    sortorder:Int
+    group:String
+    storeview:String
+    content:String
+    customer_group:String
+    status:Int
+    created_at:String
+    updated_at:String
+}
+input FaqFilterInput @doc(description: "ProductAttributeFilterInput defines the filters to be used in the search. A filter contains at least one attribute, a comparison operator, and the value that is being searched for.") {
+
+    title:FilterTypeInput
+    faq_id:FilterTypeInput
+    sortorder:FilterTypeInput
+    group:FilterTypeInput
+    storeview:FilterTypeInput
+    content:FilterTypeInput
+    customer_group:FilterTypeInput
+    status:FilterTypeInput
+    created_at:FilterTypeInput
+    updated_at:FilterTypeInput
+}
+input FaqSortInput @doc(description: "ProductSortInput is deprecated, use @ProductAttributeSortInput instead. ProductSortInput specifies the attribute to use for sorting search results and indicates whether the results are sorted in ascending or descending order.") {
+    name: SortEnum @doc(description: "The product name. Customers use this name to identify the product.")
+    sortorder: SortEnum @doc(description: "The product name. Customers use this name to identify the product.")
+    faq_id: SortEnum @doc(description: "The product name. Customers use this name to identify the product.")
+}

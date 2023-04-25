@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+  <type name="Magento\StoreGraphQl\Model\Resolver\Store\StoreConfigDataProvider">
+    <arguments>
+      <argument name="extendedConfigData" xsi:type="array">
+        <item name="show_banner" xsi:type="string">fsconfig/settings/show_banner</item>
+        <item name="show_product_category" xsi:type="string">fsconfig/settings/show_product_category</item> 
+        <item name="show_about_us" xsi:type="string">fsconfig/settings/show_about_us</item>     
+        <item name="show_new_arrivals" xsi:type="string">fsconfig/settings/show_new_arrivals</item>     
+        <item name="show_best_seller" xsi:type="string">fsconfig/settings/show_best_seller</item>     
+        <item name="show_blogs" xsi:type="string">fsconfig/settings/show_blogs</item>     
+        <item name="show_testimonals" xsi:type="string">fsconfig/settings/show_testimonals</item>
+        <item name="home_categories" xsi:type="string">fsconfig/settings/home_categories</item>
+        <item name="support_email" xsi:type="string">fsconfig/settings/support_email</item>
+        <item name="support_phone" xsi:type="string">fsconfig/settings/support_phone</item>     
+      </argument>
+    </arguments>
+  </type>
+</config>
