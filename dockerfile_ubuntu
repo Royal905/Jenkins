@@ -36,6 +36,9 @@ RUN apt install curl
 RUN curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
 RUN php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
 RUN apt update
+
+RUN apt install php-mbstring
+RUN composer update 
 #RUN apt clean
 
 # Update Apache Configuration
