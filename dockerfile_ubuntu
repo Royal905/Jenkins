@@ -36,7 +36,7 @@ RUN sed -E -i -e 's/expose_php = On/expose_php = Off/' /etc/php/8.1/cli/php.ini
 #COPY required files
 COPY run.sh /scripts/run.sh
 COPY postrun.sh /scripts/postrun.sh
-COPY headless /var/www/html/
+COPY headless1 /var/www/html/headless
 EXPOSE 80
 USER root
 
