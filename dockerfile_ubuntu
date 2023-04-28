@@ -5,7 +5,6 @@ RUN apt update
 RUN apt install apache2 apache2-utils nano git -y
 RUN apt update
 RUN apt install composer
-RUN apt update
 ## below lines to be turned on if crons capability is needed in docker container, customcron file to be updated ad per desired schedule.
 #RUN apt install apache2 apache2-utils nano git cron -y
 #COPY customcron /etc/cron.d/hello-cron
