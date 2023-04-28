@@ -1,0 +1,26 @@
+type Query {
+    bestSeller : BestSeller1 @resolver( class: "FS\\Bestseller\\Model\\Resolver\\BestSeller1") @doc(description: "Get bestSeller Records")
+}
+type BestSeller1 @doc(description: "Get Best products") {
+    data: [BestSellerData] @doc(description: "Get Best products")
+}
+type BestSellerData @doc(description: "Get bestSeller products") {
+    name: String @doc(description: "Get bestSeller products")
+    price: String @doc(description: "Get bestSeller products")
+    final_price: String @doc(description: "Get bestSeller products")
+    sku: String @doc(description: "Get bestSeller products")
+    image: String @doc(description: "Get bestSeller products")
+    description: String @doc(description: "Get bestSeller products")
+    urlkey: String @doc(description: "Get bestSeller products")
+	price: String @doc(description: "Get bestSeller products")
+	final_price: String @doc(description: "Get bestSeller products")
+	image: String @doc(description: "Get bestSeller products")
+	uid: String @doc(description: "Get bestSeller products")
+	stock_status: String @doc(description: "Get bestSeller products")
+	type_id: String @doc(description: "Get bestSeller products")
+    qtys_ordered: String @doc(description: "Get qtys_ordered")
+    
+
+
+    
+}
