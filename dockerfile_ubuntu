@@ -38,8 +38,7 @@ RUN php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { ec
 RUN php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
 RUN apt update
 
-RUN apt install php-mbstring
-RUN apt install php-xml -y
+
 #RUN apt clean
 
 # Update Apache Configuration
