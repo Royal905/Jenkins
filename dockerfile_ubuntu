@@ -4,9 +4,7 @@ FROM ubuntu:18.04
 RUN apt update
 RUN apt install apache2 apache2-utils nano git -y
 RUN apt update
-RUN curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
-RUN sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
-RUN apt update
+
 
 ## below lines to be turned on if crons capability is needed in docker container, customcron file to be updated ad per desired schedule.
 #RUN apt install apache2 apache2-utils nano git cron -y
@@ -33,6 +31,9 @@ RUN apt install php8.2 -y
 RUN apt-get install libapache2-mod-php8.2 php8.2-common php8.2-mbstring  php8.2-soap php8.2-gd php8.2-xml php8.2-intl php8.2-mysql php8.2-cli php8.2-mcrypt php8.2-zip php8.2-curl  php8.2-bcmath -y
 #php7.4-xmlrpc php7.4-gmp
 
+RUN curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
+RUN sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
+RUN apt update
 #RUN apt clean
 
 # Update Apache Configuration
