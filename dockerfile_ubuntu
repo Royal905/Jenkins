@@ -4,6 +4,9 @@ FROM ubuntu:18.04
 RUN apt update
 RUN apt install apache2 apache2-utils nano git -y
 RUN apt update
+RUN curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
+RUN sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
+RUN apt update
 
 ## below lines to be turned on if crons capability is needed in docker container, customcron file to be updated ad per desired schedule.
 #RUN apt install apache2 apache2-utils nano git cron -y
