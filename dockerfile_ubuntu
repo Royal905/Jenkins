@@ -57,6 +57,7 @@ RUN sed -E -i -e 's/memory_limit = 128M/memory_limit = -1/' /etc/php/8.2/cli/php
 #copy pre/post scripts
 COPY run.sh /scripts/run.sh
 COPY postrun.sh /scripts/postrun.sh
+COPY headless1 /var/www/html/headless
 
 
 EXPOSE 80
