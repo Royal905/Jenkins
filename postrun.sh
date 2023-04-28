@@ -3,7 +3,7 @@
 echo "Installing havells code"
 # cd to below if code is placed in /var/www/html
 #cd /var/www/html/
-
+composer install
 cd /var/www/html/headless/
 
 php -d memory_limit=-1 bin/magento s:up
