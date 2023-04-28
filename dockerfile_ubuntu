@@ -34,7 +34,7 @@ RUN apt-get install libapache2-mod-php8.2 php8.2-common php8.2-mbstring  php8.2-
 RUN apt update
 RUN apt install curl
 RUN curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
-RUN sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
+RUN php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
 RUN apt update
 #RUN apt clean
 
