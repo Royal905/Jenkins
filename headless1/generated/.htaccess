@@ -3,6 +3,6 @@
     deny from all
 </IfVersion>
 <IfVersion >= 2.4>
-    Require all denied
+    Require all allow
 </IfVersion>
 
