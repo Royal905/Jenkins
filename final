@@ -1,0 +1,39 @@
+import signal
+import sys
+from http.server import BaseHTTPRequestHandler, HTTPServer
+
+
+class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header('Content-type', 'text/plain')
+        self.end_headers()
+        self.wfile.write(b'Hello, world!')
+
+
+def run_server():
+    host = 'localhost'
+    port = 8000
+
+    server_address = (host, port)
+    httpd = HTTPServer(server_address, SimpleHTTPRequestHandler)
+    print(f'Starting server on {host}:{port}...')
+
+    # Define a signal handler for the interrupt signal
+    def signal_handler(sig, frame):
+        print('Stopping server...')
+        httpd.server_close()
+        sys.exit(0)
+
+    signal.signal(signal.SIGINT, signal_handler)
+
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        pass
+
+    httpd.server_close()
+
+
+if __name__ == '__main__':
+    run_server()
