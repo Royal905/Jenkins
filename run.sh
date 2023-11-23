@@ -10,6 +10,8 @@
 #use below if docker images being created  is for ubuntu
 echo "Starting Apache"
 exec apache2ctl -D FOREGROUND
+
+Hello Guys please add trigger
 ~
 ~
 ~
