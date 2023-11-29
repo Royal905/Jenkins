@@ -1,0 +1,102 @@
+.VerticalNav {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0px 4px 7px #0000001a;
+  transition: all 0.4s;
+  /*  min-width: 14rem;
+  width: 20rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 1px solid #d6d6d6;
+  background: linear-gradient(180deg, #5d9da9 20%, #184253 64.41%);*/
+}
+
+.VerticalNav::-webkit-scrollbar {
+  width: 0px; /* Width of the scrollbar */
+}
+.NavbarExpand {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  align-items: center;
+  background: #ffffff;
+}
+
+.NavbarBrand {
+  display: inline-block;
+  box-sizing: border-box;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 5px;
+  margin-right: 1rem;
+  line-height: inherit;
+  white-space: nowrap;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.SkyWorthLogo {
+  display: inline-block !important;
+  vertical-align: top !important;
+  border-style: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.SideMenu {
+  /*display: flex;*/
+  box-sizing: border-box;
+  margin-top: 0;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+  text-align: right;
+}
+
+.SideMenuItem {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: -webkit-match-parent;
+  font-size: 18px;
+  vertical-align: top;
+}
+
+.SideMenuItemLink {
+  flex-direction: row;
+  padding: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+  color: #242424;
+  padding: 10px 20px;
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.SideMenuItemLink svg {
+  margin-right: 5px;
+}
+
+.active {
+  color: #c01012 !important;
+  background: none !important;
+}
+
+.SideMenuItemLink:hover {
+  color: #c01012;
+  text-decoration: none;
+}

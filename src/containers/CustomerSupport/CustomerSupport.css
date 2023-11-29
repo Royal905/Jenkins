@@ -1,0 +1,36 @@
+.containerRoot {
+    width: 100%;
+  }
+  
+  .table-container {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  
+  .tableHeading {
+    width: 100px;
+  }
+  
+  /*.dashboard-heading {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Louvette Beta";
+    font-variation-settings: "wght" 300, "yopq" 100, "ytde" 100;
+  }*/
+  
+  .dashboard-heading-logo {
+    text-align: center;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .text1 {
+    /*font-family: "Louvette Beta";
+    font-variation-settings: "wght" 300, "yopq" 100, "ytde" 100;
+    border: 2px solid black !important;*/
+  }
+/*  .border1{
+    font-size: 11px;
+  }*/
+  

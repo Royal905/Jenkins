@@ -1,0 +1,81 @@
+/* Reset some default styles */
+body,
+html,
+div,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.sidebar {
+  width: 15%;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+  font-size: 20px;
+  border-bottom: 1px solid #444;
+}
+
+.menu ul {
+  padding-top: 20px;
+}
+
+.menu ul li {
+  padding: 15px 20px;
+  transition: background-color 0.3s;
+}
+
+.menu ul li:hover {
+  background-color: #444;
+}
+
+.menu ul li a i {
+  margin-right: 10px;
+}
+
+.menu ul li a span {
+  display: inline-block;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+
+  .logo {
+    justify-content: center;
+  }
+
+  .menu ul li {
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .menu ul li:hover {
+    background-color: transparent;
+  }
+}
+
+.logout_Section {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.OndcLogo{
+  height: 70px;
+/*  margin-left: 50px;*/
+  border-radius: 5px;
+}

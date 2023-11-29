@@ -1,0 +1,17 @@
+.toggleBtn {
+  cursor: pointer;
+}
+
+.imagesFields {
+  display: flex;
+  align-items: center;
+}
+
+.storeViewRoot input {
+  width: 100%;
+  margin: 0px !important;
+}
+.row>*{
+  margin-bottom: 15px;
+
+}
